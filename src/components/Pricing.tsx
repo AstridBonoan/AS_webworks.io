@@ -1,4 +1,4 @@
-export function Pricing() {
+export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) {
   const websiteCreation = [
     {
       name: "Basic",
@@ -78,7 +78,7 @@ export function Pricing() {
     }
   ];
 
-  const PricingCard = ({ tier }: { tier: any }) => (
+  const PricingCard = ({ category, tier }: { category: string; tier: any }) => (
     <div className="bg-white dark:bg-slate-800 rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full">
       <h4 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
         {tier.name}
@@ -106,6 +106,12 @@ export function Pricing() {
           </div>
         ))}
       </div>
+      <button
+        onClick={() => onSelect?.(`${category}: ${tier.name}`)}
+        className="mt-8 w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold py-2 px-4 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors duration-200"
+      >
+        Keep In Touch
+      </button>
     </div>
   );
 
@@ -136,7 +142,7 @@ export function Pricing() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {websiteCreation.map((tier, index) => (
-              <PricingCard key={index} tier={tier} />
+              <PricingCard key={index} category="Website Creation" tier={tier} />
             ))}
           </div>
         </div>
@@ -153,7 +159,7 @@ export function Pricing() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {saasTools.map((tier, index) => (
-              <PricingCard key={index} tier={tier} />
+              <PricingCard key={index} category="SaaS Tools" tier={tier} />
             ))}
           </div>
         </div>
@@ -170,7 +176,7 @@ export function Pricing() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {graphicDesign.map((tier, index) => (
-              <PricingCard key={index} tier={tier} />
+              <PricingCard key={index} category="Graphic Design" tier={tier} />
             ))}
           </div>
         </div>

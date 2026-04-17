@@ -1,8 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export function ContactForm() {
+interface ContactFormProps {
+  subject?: string;
+}
+
+export function ContactForm({ subject = '' }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [formSubject, setFormSubject] = useState(subject);
+
+  useEffect(() => {
+    setFormSubject(subject);
+  }, [subject]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -104,6 +113,8 @@ export function ContactForm() {
                 type="text"
                 id="subject"
                 name="subject"
+                value={formSubject}
+                onChange={(e) => setFormSubject(e.target.value)}
                 required
                 className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white transition-colors"
                 placeholder="What's this about?"
