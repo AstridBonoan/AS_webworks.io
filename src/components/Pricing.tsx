@@ -31,61 +31,39 @@ export function Pricing() {
     {
       name: "Basic",
       price: "$1000",
-      features: [
-        "Single Purpose Feature",
-        "Simple Calculator/Price Estimator",
-        "Contact/Intake Form",
-        "Save or Email Data",
-        "Basic Automation",
-        "Email on Form Submit",
-        "Simple Dashboard"
-      ]
+      description: "Single purpose tools like calculators, price estimators, or simple data collection that helps streamline your workflow with basic automation."
     },
     {
       name: "Standard",
       price: "$1600",
-      features: [
-        "Real Business Workflow",
-        "Appointment/Booking System",
-        "Stripe Payment Integration",
-        "Google Calendar Sync",
-        "Email Confirmations",
-        "Automated Reminders"
-      ]
+      description: "Real business workflows like appointment booking systems with payment processing, calendar integration, and automated confirmations and reminders."
     },
     {
       name: "Advanced",
       price: "$3200",
-      features: [
-        "Full Software Product",
-        "User Login & Dashboards",
-        "Multi-user Roles",
-        "Complex Workflows",
-        "Data Heavy Apps",
-        "Advanced Integrations"
-      ]
+      description: "Full-featured software products including user authentication, multi-user dashboards, complex workflows, and data-heavy applications with advanced integrations."
     }
   ];
 
   const graphicDesign = [
     {
+      name: "Business Card Design",
+      price: "$75 – $150",
+      features: ["Professional business cards"]
+    },
+    {
       name: "Starter Brand Package",
-      price: "$150",
+      price: "$150 – $300",
       features: ["Logo", "Business Card", "Color Palette"]
     },
     {
       name: "Marketing Kit",
-      price: "$100",
-      features: ["Flyer", "Social Media Posts", "Ad Graphic"]
-    },
-    {
-      name: "Digital Presence Package",
-      price: "$300",
-      features: ["Landing Page Design", "Social Media Kit"]
+      price: "$250 – $500",
+      features: ["Flyer", "Social Media Posts", "Ad Graphics"]
     }
   ];
 
-  const PricingCard = ({ tier }: { tier: (typeof websiteCreation)[0] }) => (
+  const PricingCard = ({ tier, isSaaS }: { tier: any, isSaaS?: boolean }) => (
     <div className="bg-white dark:bg-slate-800 rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full">
       <h4 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
         {tier.name}
@@ -93,25 +71,33 @@ export function Pricing() {
       <p className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
         {tier.price}
       </p>
-      <div className="space-y-3 flex-grow">
-        {tier.features.map((feature, idx) => (
-          <div key={idx} className="flex items-start">
-            <span className="w-5 h-5 bg-slate-900 dark:bg-white rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
-              <svg
-                className="w-3 h-3 text-white dark:text-slate-900"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            </span>
-            <span className="text-slate-700 dark:text-slate-200">{feature}</span>
+      <div className="flex-grow">
+        {isSaaS ? (
+          <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
+            {tier.description}
+          </p>
+        ) : (
+          <div className="space-y-3">
+            {tier.features.map((feature: string, idx: number) => (
+              <div key={idx} className="flex items-start">
+                <span className="w-5 h-5 bg-slate-900 dark:bg-white rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
+                  <svg
+                    className="w-3 h-3 text-white dark:text-slate-900"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span className="text-slate-700 dark:text-slate-200">{feature}</span>
+              </div>
+            ))}
           </div>
-        ))}
+        )}
       </div>
       <button className="mt-8 w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold py-2 px-4 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors duration-200">
         Get Started
@@ -163,7 +149,7 @@ export function Pricing() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {saasTools.map((tier, index) => (
-              <PricingCard key={index} tier={tier} />
+              <PricingCard key={index} tier={tier} isSaaS={true} />
             ))}
           </div>
         </div>
