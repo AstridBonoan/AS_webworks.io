@@ -73,6 +73,81 @@ export function Footer() {
     </footer>
   );
 }
+export function Footer() {
+  return (
+    <footer className="bg-slate-900 dark:bg-slate-950 text-white py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 pb-12 border-b border-slate-800">
+          {/* Brand */}
+          <div>
+            <h3 className="text-2xl font-bold mb-2">Bonoan Labs</h3>
+            <p className="text-slate-400">
+              Creating exceptional digital experiences that transform businesses.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="font-semibold mb-4">Get In Touch</h4>
+            <p className="text-slate-400 mb-2">
+              Ready to start your next project?
+            </p>
+            <a
+              href="#contact"
+              className="inline-block px-4 py-2 bg-white text-slate-900 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center text-slate-400 text-sm">
+          <p>&copy; 2024 Bonoan Labs. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
         </svg>
       )
