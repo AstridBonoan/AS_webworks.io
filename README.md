@@ -7,7 +7,7 @@ A modern, professional mobile-first website for Bonoan Labs built with React, Ta
 - **Clean, Professional Design** - Dark and light mode support with smooth transitions
 - **Responsive** - Mobile-first design that works on all devices
 - **Fast** - Built with Vite for instant dev server and optimized production builds
-- **Sections** - About/Intro, Services Showcase, Contact Form, Footer with Socials
+- **Sections** - About/Intro, Services Showcase, Pricing, Contact Form, Footer
 - **Form Integration** - Formspree-powered contact form for email submissions
 - **Dark Mode Toggle** - User preference saved to localStorage
 
@@ -50,14 +50,6 @@ The contact form won't work until you configure Formspree:
 const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
 ```
 
-### Update Social Media Links
-
-Edit `src/components/Footer.tsx` and update these URLs:
-- Instagram: Update the Instagram link
-- Facebook: Update the Facebook link  
-- LinkedIn: Update the LinkedIn link
-- Twitter: Update the Twitter link
-
 ### Customize Content
 
 **Services** - Edit `src/components/Services.tsx`:
@@ -72,7 +64,6 @@ Edit `src/components/Footer.tsx` and update these URLs:
 
 **Footer** - Edit `src/components/Footer.tsx`:
 - Update company description
-- Edit social links
 - Customize quick links
 
 ## 📁 Project Structure
@@ -84,7 +75,7 @@ src/
 │   ├── Hero.tsx          - About/hero section
 │   ├── Services.tsx      - Service offerings
 │   ├── ContactForm.tsx   - Contact form with Formspree
-│   └── Footer.tsx        - Footer with social links
+│   └── Footer.tsx        - Footer with quick links
 ├── hooks/
 │   └── useTheme.ts       - Dark/light mode logic
 ├── App.tsx               - Main app component
@@ -115,7 +106,6 @@ No custom CSS needed - everything uses Tailwind utility classes!
 ## ✅ Before Going Live
 
 - [ ] Set up Formspree form and update ContactForm.tsx
-- [ ] Update social media links in Footer
 - [ ] Update company description and hero copy
 - [ ] Update service descriptions and pricing
 - [ ] Test form submissions

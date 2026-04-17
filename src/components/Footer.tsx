@@ -72,6 +72,14 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href="#pricing"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a
                   href="#contact"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
@@ -94,22 +102,6 @@ export function Footer() {
               Contact Me
             </a>
           </div>
-        </div>
-
-        {/* Social Links */}
-        <div className="flex justify-center gap-6 mb-8">
-          {socials.map((social) => (
-            <a
-              key={social.name}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors"
-              aria-label={social.name}
-            >
-              {social.icon}
-            </a>
-          ))}
         </div>
 
         {/* Copyright */}
