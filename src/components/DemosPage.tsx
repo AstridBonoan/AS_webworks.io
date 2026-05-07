@@ -11,7 +11,7 @@ export function DemosPage() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <div className="aspect-[16/10] w-full bg-slate-100 dark:bg-slate-950 p-2">
+            <div className="aspect-[2/1] w-full bg-slate-100 dark:bg-slate-950">
               <img src="/bonoan_labs.io/demo-images/clothing.png" alt="AS Clothing Ecommerce screenshot" className="h-full w-full object-contain" />
             </div>
             <div className="p-5">
@@ -27,7 +27,7 @@ export function DemosPage() {
             </div>
           </article>
           <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <div className="aspect-[16/10] w-full bg-slate-100 dark:bg-slate-950 p-2">
+            <div className="aspect-[2/1] w-full bg-slate-100 dark:bg-slate-950">
               <img src="/bonoan_labs.io/demo-images/autoshop.png" alt="AS Auto Shop screenshot" className="h-full w-full object-contain" />
             </div>
             <div className="p-5">
@@ -43,7 +43,7 @@ export function DemosPage() {
             </div>
           </article>
           <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <div className="aspect-[16/10] w-full bg-slate-100 dark:bg-slate-950 p-2">
+            <div className="aspect-[2/1] w-full bg-slate-100 dark:bg-slate-950">
               <img src="/bonoan_labs.io/demo-images/restaurant.png" alt="A&S Filipino Kitchen screenshot" className="h-full w-full object-contain" />
             </div>
             <div className="p-5">
