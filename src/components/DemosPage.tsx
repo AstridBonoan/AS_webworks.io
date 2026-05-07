@@ -10,9 +10,39 @@ export function DemosPage() {
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40" />
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40" />
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40" />
+          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40">
+            <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 1</h2>
+            <a
+              href="https://astridbonoan.github.io/AS-ClothingEcommerce.io/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center rounded-lg bg-slate-900 dark:bg-white px-4 py-2 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
+            >
+              Open Demo
+            </a>
+          </article>
+          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40">
+            <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 2</h2>
+            <a
+              href="https://astridbonoan.github.io/AS-AutoShop.io/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center rounded-lg bg-slate-900 dark:bg-white px-4 py-2 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
+            >
+              Open Demo
+            </a>
+          </article>
+          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40">
+            <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 3</h2>
+            <a
+              href="https://astridbonoan.github.io/AS-FilipinoRestaurant.io/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center rounded-lg bg-slate-900 dark:bg-white px-4 py-2 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
+            >
+              Open Demo
+            </a>
+          </article>
         </div>
       </div>
     </section>
