@@ -10,10 +10,8 @@ export function DemosPage() {
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <div className="aspect-[2/1] w-full bg-slate-100 dark:bg-slate-950">
-              <img src="/bonoan_labs.io/demo-images/clothing.png" alt="AS Clothing Ecommerce screenshot" className="h-full w-full object-contain" />
-            </div>
+          <article className="rounded-md border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+            <img src="/bonoan_labs.io/demo-images/clothing.png" alt="AS Clothing Ecommerce screenshot" className="block w-full h-auto" />
             <div className="p-5">
               <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 1</h2>
               <a
@@ -26,10 +24,8 @@ export function DemosPage() {
               </a>
             </div>
           </article>
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <div className="aspect-[2/1] w-full bg-slate-100 dark:bg-slate-950">
-              <img src="/bonoan_labs.io/demo-images/autoshop.png" alt="AS Auto Shop screenshot" className="h-full w-full object-contain" />
-            </div>
+          <article className="rounded-md border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+            <img src="/bonoan_labs.io/demo-images/autoshop.png" alt="AS Auto Shop screenshot" className="block w-full h-auto" />
             <div className="p-5">
               <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 2</h2>
               <a
@@ -42,10 +38,8 @@ export function DemosPage() {
               </a>
             </div>
           </article>
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <div className="aspect-[2/1] w-full bg-slate-100 dark:bg-slate-950">
-              <img src="/bonoan_labs.io/demo-images/restaurant.png" alt="A&S Filipino Kitchen screenshot" className="h-full w-full object-contain" />
-            </div>
+          <article className="rounded-md border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+            <img src="/bonoan_labs.io/demo-images/restaurant.png" alt="A&S Filipino Kitchen screenshot" className="block w-full h-auto" />
             <div className="p-5">
               <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 3</h2>
               <a
