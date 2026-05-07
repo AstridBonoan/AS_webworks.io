@@ -10,6 +10,15 @@ interface NavbarProps {
 export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const goToHome = () => {
+    if (pathname !== '/') {
+      onNavigate('/');
+      return;
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const scrollToSection = (id: string) => {
     if (pathname !== '/') {
       onNavigate('/');
@@ -31,7 +40,11 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-3">
+          <button
+            type="button"
+            onClick={goToHome}
+            className="flex-shrink-0 flex items-center gap-3"
+          >
             <img
               src={isDark ? '/bonoan_labs.io/logo-dark.png' : '/bonoan_labs.io/logo-light.png'}
               alt="Bonoan Labs"
@@ -40,7 +53,7 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
             <span className="text-2xl font-bold text-slate-900 dark:text-white">
               Bonoan Labs
             </span>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
