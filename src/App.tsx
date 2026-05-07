@@ -30,6 +30,18 @@ function App() {
     }
   }
 
+  const navigateToSection = (id: string) => {
+    if (pathname !== '/') {
+      navigateTo('/')
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+      }, 0)
+      return
+    }
+
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   const handlePricingSelect = (subject: string) => {
     setContactSubject(subject)
     setTimeout(() => {
@@ -52,7 +64,7 @@ function App() {
           </>
         )}
       </main>
-      <Footer />
+      <Footer onNavigateToSection={navigateToSection} />
     </div>
   )
 }

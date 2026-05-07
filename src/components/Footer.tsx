@@ -1,4 +1,8 @@
-export function Footer() {
+interface FooterProps {
+  onNavigateToSection: (id: string) => void;
+}
+
+export function Footer({ onNavigateToSection }: FooterProps) {
   return (
     <footer className="bg-slate-900 dark:bg-slate-950 text-white py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
       <div className="max-w-6xl mx-auto">
@@ -16,36 +20,40 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#about"
+                <button
+                  type="button"
+                  onClick={() => onNavigateToSection('about')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   About
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#services"
+                <button
+                  type="button"
+                  onClick={() => onNavigateToSection('services')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   Services
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#pricing"
+                <button
+                  type="button"
+                  onClick={() => onNavigateToSection('pricing')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   Pricing
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <button
+                  type="button"
+                  onClick={() => onNavigateToSection('contact')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   Contact
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -56,12 +64,13 @@ export function Footer() {
             <p className="text-slate-400 mb-2">
               Ready to start your next project?
             </p>
-            <a
-              href="#contact"
+            <button
+              type="button"
+              onClick={() => onNavigateToSection('contact')}
               className="inline-block px-4 py-2 bg-white text-slate-900 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
             >
               Contact Me
-            </a>
+            </button>
           </div>
         </div>
 
