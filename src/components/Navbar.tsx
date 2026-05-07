@@ -3,12 +3,24 @@ import { useState } from 'react';
 interface NavbarProps {
   isDark: boolean;
   onThemeToggle: () => void;
+  pathname: string;
+  onNavigate: (path: string) => void;
 }
 
-export function Navbar({ isDark, onThemeToggle }: NavbarProps) {
+export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
+    if (pathname !== '/') {
+      onNavigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 0);
+      setIsMenuOpen(false);
+      return;
+    }
+
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
@@ -50,6 +62,15 @@ export function Navbar({ isDark, onThemeToggle }: NavbarProps) {
               className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
             >
               Contact
+            </button>
+            <button
+              onClick={() => {
+                onNavigate('/demos');
+                setIsMenuOpen(false);
+              }}
+              className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
+            >
+              Demos
             </button>
           </div>
 
@@ -170,6 +191,15 @@ export function Navbar({ isDark, onThemeToggle }: NavbarProps) {
               className="block w-full text-left px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200"
             >
               Contact
+            </button>
+            <button
+              onClick={() => {
+                onNavigate('/demos');
+                setIsMenuOpen(false);
+              }}
+              className="block w-full text-left px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 border-t border-slate-100 dark:border-slate-800"
+            >
+              Demos
             </button>
           </nav>
         </div>
