@@ -10,43 +10,46 @@ export function DemosPage() {
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <img src="/bonoan_labs.io/demo-images/clothing.png" alt="AS Clothing Ecommerce screenshot" className="h-40 w-full object-cover" />
-            <div className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 1</h2>
+          <article className="relative h-72 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <img src="/bonoan_labs.io/demo-images/clothing.png" alt="AS Clothing Ecommerce screenshot" className="absolute inset-0 h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black/35" />
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <h2 className="text-xl font-semibold text-white mb-3">Project 1</h2>
               <a
                 href="https://astridbonoan.github.io/AS-ClothingEcommerce.io/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-lg bg-slate-900 dark:bg-white px-4 py-2 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
+                className="inline-flex items-center rounded-lg bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-white transition-colors"
               >
                 Open Demo
               </a>
             </div>
           </article>
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <img src="/bonoan_labs.io/demo-images/autoshop.png" alt="AS Auto Shop screenshot" className="h-40 w-full object-cover" />
-            <div className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 2</h2>
+          <article className="relative h-72 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <img src="/bonoan_labs.io/demo-images/autoshop.png" alt="AS Auto Shop screenshot" className="absolute inset-0 h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black/35" />
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <h2 className="text-xl font-semibold text-white mb-3">Project 2</h2>
               <a
                 href="https://astridbonoan.github.io/AS-AutoShop.io/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-lg bg-slate-900 dark:bg-white px-4 py-2 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
+                className="inline-flex items-center rounded-lg bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-white transition-colors"
               >
                 Open Demo
               </a>
             </div>
           </article>
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <img src="/bonoan_labs.io/demo-images/restaurant.png" alt="A&S Filipino Kitchen screenshot" className="h-40 w-full object-cover" />
-            <div className="p-6">
-              <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 3</h2>
+          <article className="relative h-72 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <img src="/bonoan_labs.io/demo-images/restaurant.png" alt="A&S Filipino Kitchen screenshot" className="absolute inset-0 h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black/35" />
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <h2 className="text-xl font-semibold text-white mb-3">Project 3</h2>
               <a
                 href="https://astridbonoan.github.io/AS-FilipinoRestaurant.io/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-lg bg-slate-900 dark:bg-white px-4 py-2 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
+                className="inline-flex items-center rounded-lg bg-white/90 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-white transition-colors"
               >
                 Open Demo
               </a>
