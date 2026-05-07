@@ -27,7 +27,7 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white dark:bg-slate-900 shadow-md z-50 transition-colors duration-200">
+    <nav className="fixed top-0 w-full bg-white dark:bg-[#0a2035] shadow-md z-50 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -83,7 +83,7 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
           <div className="flex items-center space-x-4">
             <button
               onClick={onThemeToggle}
-              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-yellow-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+              className="p-2 rounded-lg bg-slate-100 dark:bg-[#122c45] text-slate-900 dark:text-yellow-400 hover:bg-slate-200 dark:hover:bg-[#183550] transition-colors"
               aria-label="Toggle theme"
             >
               {isDark ? (

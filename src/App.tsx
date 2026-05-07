@@ -50,7 +50,7 @@ function App() {
   }
 
   return (
-    <div className="bg-white dark:bg-slate-950 transition-colors duration-200">
+    <div className="bg-white dark:bg-[#071c30] transition-colors duration-200">
       <Navbar isDark={isDark} onThemeToggle={toggleTheme} pathname={pathname} onNavigate={navigateTo} />
       <main>
         {pathname === '/demos' ? (

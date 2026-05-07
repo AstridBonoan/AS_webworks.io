@@ -79,7 +79,7 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
   ];
 
   const PricingCard = ({ category, tier }: { category: string; tier: any }) => (
-    <div className="bg-white dark:bg-slate-800 rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full">
+    <div className="bg-white dark:bg-[#0d243a] rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full">
       <h4 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
         {tier.name}
       </h4>
@@ -118,7 +118,7 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
   return (
     <section
       id="pricing"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-200"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-transparent transition-colors duration-200"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
