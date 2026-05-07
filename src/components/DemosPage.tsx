@@ -1,7 +1,7 @@
 export function DemosPage() {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen bg-white dark:bg-slate-950 transition-colors duration-200">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
           Demos
         </h1>
@@ -9,9 +9,9 @@ export function DemosPage() {
           Explore live examples of websites, SaaS experiences, and interactive product builds.
         </p>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <div className="aspect-[16/9] w-full bg-slate-100 dark:bg-slate-950 p-2">
+            <div className="aspect-[16/10] w-full bg-slate-100 dark:bg-slate-950 p-2">
               <img src="/bonoan_labs.io/demo-images/clothing.png" alt="AS Clothing Ecommerce screenshot" className="h-full w-full object-contain" />
             </div>
             <div className="p-5">
@@ -27,7 +27,7 @@ export function DemosPage() {
             </div>
           </article>
           <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
-            <div className="aspect-[16/9] w-full bg-slate-100 dark:bg-slate-950 p-2">
+            <div className="aspect-[16/10] w-full bg-slate-100 dark:bg-slate-950 p-2">
               <img src="/bonoan_labs.io/demo-images/autoshop.png" alt="AS Auto Shop screenshot" className="h-full w-full object-contain" />
             </div>
             <div className="p-5">
@@ -42,8 +42,8 @@ export function DemosPage() {
               </a>
             </div>
           </article>
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden lg:col-span-2">
-            <div className="aspect-[16/9] w-full bg-slate-100 dark:bg-slate-950 p-2">
+          <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+            <div className="aspect-[16/10] w-full bg-slate-100 dark:bg-slate-950 p-2">
               <img src="/bonoan_labs.io/demo-images/restaurant.png" alt="A&S Filipino Kitchen screenshot" className="h-full w-full object-contain" />
             </div>
             <div className="p-5">
