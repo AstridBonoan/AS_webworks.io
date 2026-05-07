@@ -4,7 +4,7 @@ interface FooterProps {
 
 export function Footer({ onNavigateToSection }: FooterProps) {
   return (
-    <footer className="bg-slate-900 dark:bg-[#0a2035] text-white py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
+    <footer className="bg-slate-900 dark:bg-slate-950 text-white py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 pb-12 border-b border-slate-800">
           {/* Brand */}

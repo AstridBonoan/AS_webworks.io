@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="about"
-      className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex flex-col justify-center items-center bg-white dark:bg-transparent transition-colors duration-200"
+      className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex flex-col justify-center items-center bg-white dark:bg-slate-950 transition-colors duration-200"
     >
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6">

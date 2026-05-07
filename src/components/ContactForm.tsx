@@ -46,7 +46,7 @@ export function ContactForm({ subject = '' }: ContactFormProps) {
   return (
     <section
       id="contact"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-transparent transition-colors duration-200"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-200"
     >
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
