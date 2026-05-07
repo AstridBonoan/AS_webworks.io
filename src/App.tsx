@@ -12,18 +12,19 @@ import './index.css'
 function App() {
   const { isDark, toggleTheme } = useTheme()
   const [contactSubject, setContactSubject] = useState('')
-  const [pathname, setPathname] = useState(window.location.pathname)
+  const getRoute = () => window.location.hash.replace('#', '') || '/'
+  const [pathname, setPathname] = useState(getRoute())
 
   useEffect(() => {
-    const handlePopState = () => setPathname(window.location.pathname)
+    const handleHashChange = () => setPathname(getRoute())
 
-    window.addEventListener('popstate', handlePopState)
-    return () => window.removeEventListener('popstate', handlePopState)
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
   }, [])
 
   const navigateTo = (path: string) => {
-    if (window.location.pathname !== path) {
-      window.history.pushState({}, '', path)
+    if (getRoute() !== path) {
+      window.location.hash = path
       setPathname(path)
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }

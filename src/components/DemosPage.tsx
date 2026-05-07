@@ -10,26 +10,9 @@ export function DemosPage() {
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm">
-            <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Business Website Demo</h2>
-            <p className="text-slate-600 dark:text-slate-300">
-              A conversion-focused marketing site with modern design and strong performance.
-            </p>
-          </article>
-
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm">
-            <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">SaaS Dashboard Demo</h2>
-            <p className="text-slate-600 dark:text-slate-300">
-              A clean dashboard experience showing analytics, user roles, and workflow management.
-            </p>
-          </article>
-
-          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm">
-            <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">E-commerce Flow Demo</h2>
-            <p className="text-slate-600 dark:text-slate-300">
-              A streamlined shopping and checkout journey designed to reduce friction and improve sales.
-            </p>
-          </article>
+          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40" />
+          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40" />
+          <article className="rounded-xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-sm min-h-40" />
         </div>
       </div>
     </section>
