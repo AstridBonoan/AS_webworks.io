@@ -9,7 +9,11 @@ export function Footer({ onNavigateToSection }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 pb-12 border-b border-slate-800">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-2">Bonoan Labs</h3>
+            <img
+              src="/bonoan_labs.io/logo.png"
+              alt="Bonoan Labs"
+              className="h-14 w-auto mb-3"
+            />
             <p className="text-slate-400">
               Creating exceptional digital experiences that transform businesses.
             </p>
@@ -76,7 +80,7 @@ export function Footer({ onNavigateToSection }: FooterProps) {
 
         {/* Copyright */}
         <div className="text-center text-slate-400 text-sm">
-          <p>&copy; 2024 Bonoan Labs. All rights reserved.</p>
+          <p>&copy; 2024. All rights reserved.</p>
         </div>
       </div>
     </footer>
