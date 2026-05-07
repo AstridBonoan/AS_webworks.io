@@ -35,7 +35,7 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
             <img
               src={isDark ? '/bonoan_labs.io/logo-dark.png' : '/bonoan_labs.io/logo-light.png'}
               alt="Bonoan Labs"
-              className="h-12 w-auto"
+              className={`h-12 w-auto ${isDark ? 'mix-blend-screen' : ''}`}
             />
             <span className="text-2xl font-bold text-slate-900 dark:text-white">
               Bonoan Labs

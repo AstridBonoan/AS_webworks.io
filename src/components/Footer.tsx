@@ -18,7 +18,7 @@ export function Footer({ onNavigateToSection }: FooterProps) {
               <img
                 src="/bonoan_labs.io/logo-dark.png"
                 alt="Bonoan Labs"
-                className="hidden h-16 w-auto dark:block"
+                className="hidden h-16 w-auto dark:block mix-blend-screen"
               />
               <h3 className="text-2xl font-bold">Bonoan Labs</h3>
             </div>
