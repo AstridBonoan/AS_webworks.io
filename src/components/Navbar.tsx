@@ -33,7 +33,7 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
             <img
-              src="/bonoan_labs.io/logo.png"
+              src={isDark ? '/bonoan_labs.io/logo-dark.png' : '/bonoan_labs.io/logo-light.png'}
               alt="Bonoan Labs"
               className="h-12 w-auto"
             />

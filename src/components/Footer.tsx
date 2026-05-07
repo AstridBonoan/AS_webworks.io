@@ -11,9 +11,14 @@ export function Footer({ onNavigateToSection }: FooterProps) {
           <div>
             <div className="flex items-center gap-3 mb-3">
               <img
-                src="/bonoan_labs.io/logo.png"
+                src="/bonoan_labs.io/logo-light.png"
                 alt="Bonoan Labs"
-                className="h-16 w-auto"
+                className="h-16 w-auto dark:hidden"
+              />
+              <img
+                src="/bonoan_labs.io/logo-dark.png"
+                alt="Bonoan Labs"
+                className="hidden h-16 w-auto dark:block"
               />
               <h3 className="text-2xl font-bold">Bonoan Labs</h3>
             </div>
