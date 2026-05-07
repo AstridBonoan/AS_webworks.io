@@ -31,12 +31,15 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-3">
             <img
               src="/bonoan_labs.io/logo.png"
               alt="Bonoan Labs"
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
+            <span className="text-2xl font-bold text-slate-900 dark:text-white">
+              Bonoan Labs
+            </span>
           </div>
 
           {/* Desktop Navigation */}
