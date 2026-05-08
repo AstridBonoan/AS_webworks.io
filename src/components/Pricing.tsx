@@ -79,14 +79,14 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
   ];
 
   const PricingCard = ({ category, tier }: { category: string; tier: any }) => (
-    <div className="bg-white dark:bg-slate-800 rounded-lg p-8 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full">
-      <h4 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+    <div className="bg-white dark:bg-slate-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full">
+      <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-1">
         {tier.name}
       </h4>
-      <p className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
+      <p className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
         {tier.price}
       </p>
-      <div className="space-y-3 flex-grow">
+      <div className="space-y-2.5 flex-grow">
         {tier.features.map((feature: string, idx: number) => (
           <div key={idx} className="flex items-start">
             <span className="w-5 h-5 bg-slate-900 dark:bg-white rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
@@ -102,13 +102,13 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
                 ></path>
               </svg>
             </span>
-            <span className="text-slate-700 dark:text-slate-200">{feature}</span>
+            <span className="text-sm text-slate-700 dark:text-slate-200">{feature}</span>
           </div>
         ))}
       </div>
       <button
         onClick={() => onSelect?.(`${category}: ${tier.name}`)}
-        className="mt-8 w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold py-2 px-4 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors duration-200"
+        className="mt-6 w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold text-sm py-2 px-4 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors duration-200"
       >
         Keep In Touch
       </button>
@@ -118,11 +118,11 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
   return (
     <section
       id="pricing"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-200"
+      className="pt-28 pb-14 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-200"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-3">
             Pricing
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300">
@@ -131,16 +131,16 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
         </div>
 
         {/* Website Creation */}
-        <div className="mb-20">
-          <div className="mb-8">
-            <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
+        <div className="mb-14">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-1">
               Website Creation
             </h3>
             <p className="text-slate-600 dark:text-slate-400">
               Custom, responsive websites built with modern technologies
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {websiteCreation.map((tier, index) => (
               <PricingCard key={index} category="Website Creation" tier={tier} />
             ))}
@@ -148,16 +148,16 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
         </div>
 
         {/* SaaS Tools */}
-        <div className="mb-20">
-          <div className="mb-8">
-            <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
+        <div className="mb-14">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-1">
               SaaS Tools
             </h3>
             <p className="text-slate-600 dark:text-slate-400">
               Build scalable Software-as-a-Service solutions tailored to your business
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {saasTools.map((tier, index) => (
               <PricingCard key={index} category="SaaS Tools" tier={tier} />
             ))}
@@ -166,15 +166,15 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
 
         {/* Graphic Design */}
         <div>
-          <div className="mb-8">
-            <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-1">
               Graphic Design
             </h3>
             <p className="text-slate-600 dark:text-slate-400">
               Professional branding materials and design packages
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {graphicDesign.map((tier, index) => (
               <PricingCard key={index} category="Graphic Design" tier={tier} />
             ))}
