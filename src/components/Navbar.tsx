@@ -56,6 +56,12 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
               Our Team
             </button>
             <button
+              onClick={() => onNavigate('/services')}
+              className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
+            >
+              Services
+            </button>
+            <button
               onClick={() => onNavigate('/pricing')}
               className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
             >
@@ -66,12 +72,6 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
               className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
             >
               Contact
-            </button>
-            <button
-              onClick={() => onNavigate('/services')}
-              className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
-            >
-              Services
             </button>
             <button
               onClick={() => {
@@ -198,6 +198,15 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
             </button>
             <button
               onClick={() => {
+                onNavigate('/services');
+                setIsMenuOpen(false);
+              }}
+              className="block w-full text-left px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 border-b border-slate-100 dark:border-slate-800"
+            >
+              Services
+            </button>
+            <button
+              onClick={() => {
                 onNavigate('/pricing');
                 setIsMenuOpen(false);
               }}
@@ -213,15 +222,6 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
               className="block w-full text-left px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 border-b border-slate-100 dark:border-slate-800"
             >
               Contact
-            </button>
-            <button
-              onClick={() => {
-                onNavigate('/services');
-                setIsMenuOpen(false);
-              }}
-              className="block w-full text-left px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200"
-            >
-              Services
             </button>
             <button
               onClick={() => {
