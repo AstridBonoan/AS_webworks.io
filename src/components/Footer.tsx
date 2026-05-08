@@ -15,15 +15,15 @@ export function Footer({ onNavigateToSection }: FooterProps) {
             <div className="flex items-center gap-3 mb-3">
               <img
                 src={logoLightSrc}
-                alt="Bonoan Labs"
+                alt="A&S WebWorks"
                 className="h-16 w-auto dark:hidden"
               />
               <img
                 src={logoDarkSrc}
-                alt="Bonoan Labs"
-                className="hidden h-16 w-auto dark:block mix-blend-screen"
+                alt="A&S WebWorks"
+                className="hidden h-16 w-auto dark:block mix-blend-lighten opacity-90 brightness-110 contrast-110"
               />
-              <h3 className="text-2xl font-bold">Bonoan Labs</h3>
+              <h3 className="text-2xl font-bold">A&S WebWorks</h3>
             </div>
             <p className="text-slate-400">
               Creating exceptional digital experiences that transform businesses.
@@ -91,7 +91,7 @@ export function Footer({ onNavigateToSection }: FooterProps) {
 
         {/* Copyright */}
         <div className="text-center text-slate-400 text-sm">
-          <p>&copy; 2024 Bonoan Labs. All rights reserved.</p>
+          <p>&copy; 2024 A&S WebWorks. All rights reserved.</p>
         </div>
       </div>
     </footer>
