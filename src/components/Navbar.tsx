@@ -9,6 +9,8 @@ interface NavbarProps {
 
 export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const logoDarkSrc = `${import.meta.env.BASE_URL}logo-dark.png`;
+  const logoLightSrc = `${import.meta.env.BASE_URL}logo-light.png`;
 
   const goToHome = () => {
     if (pathname !== '/') {
@@ -46,7 +48,7 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
             className="flex-shrink-0 flex items-center gap-3"
           >
             <img
-              src={isDark ? '/bonoan_labs.io/logo-dark.png' : '/bonoan_labs.io/logo-light.png'}
+              src={isDark ? logoDarkSrc : logoLightSrc}
               alt="A&S Web Works"
               className={`h-12 w-auto ${isDark ? 'mix-blend-screen' : ''}`}
             />

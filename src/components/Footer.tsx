@@ -3,6 +3,9 @@ interface FooterProps {
 }
 
 export function Footer({ onNavigateToSection }: FooterProps) {
+  const logoLightSrc = `${import.meta.env.BASE_URL}logo-light.png`;
+  const logoDarkSrc = `${import.meta.env.BASE_URL}logo-dark.png`;
+
   return (
     <footer className="bg-slate-900 dark:bg-slate-950 text-white py-16 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
       <div className="max-w-6xl mx-auto">
@@ -11,12 +14,12 @@ export function Footer({ onNavigateToSection }: FooterProps) {
           <div>
             <div className="flex items-center gap-3 mb-3">
               <img
-                src="/bonoan_labs.io/logo-light.png"
+                src={logoLightSrc}
                 alt="A&S Web Works"
                 className="h-16 w-auto dark:hidden"
               />
               <img
-                src="/bonoan_labs.io/logo-dark.png"
+                src={logoDarkSrc}
                 alt="A&S Web Works"
                 className="hidden h-16 w-auto dark:block mix-blend-screen"
               />

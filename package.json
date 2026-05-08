@@ -1,9 +1,9 @@
 {
-  "name": "bonoan_labs",
+  "name": "as-web-works",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://astridbonoan.github.io/bonoan_labs.io/",
+  "homepage": "https://astridbonoan.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
