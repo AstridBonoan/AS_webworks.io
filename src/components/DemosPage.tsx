@@ -61,7 +61,7 @@ export function DemosPage() {
               className="block w-full h-auto"
             />
             <div className="p-5">
-              <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">A&S Enterprises</h2>
+              <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 4</h2>
               <a
                 href="https://astridbonoan.github.io/AS_RealEstate.io/"
                 target="_blank"
