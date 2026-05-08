@@ -72,6 +72,24 @@ export function DemosPage() {
               </a>
             </div>
           </article>
+          <article className="rounded-md border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+            <img
+              src={`${demoImageBase}as-law.png`}
+              alt="A&S Law corporate counsel landing page screenshot"
+              className="block w-full h-auto"
+            />
+            <div className="p-5">
+              <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">Project 5</h2>
+              <a
+                href="https://astridbonoan.github.io/A-S_LawFirm.io/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-lg bg-slate-900 dark:bg-white px-4 py-2 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
+              >
+                Open Demo
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
