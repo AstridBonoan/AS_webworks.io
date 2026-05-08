@@ -7,6 +7,7 @@ import { Pricing } from './components/Pricing'
 import { ContactForm } from './components/ContactForm'
 import { Footer } from './components/Footer'
 import { DemosPage } from './components/DemosPage'
+import { OurTeamPage } from './components/OurTeamPage'
 import './index.css'
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         {pathname === '/pricing' && <Pricing onSelect={handlePricingSelect} />}
         {pathname === '/contact' && <ContactForm subject={contactSubject} />}
         {pathname === '/demos' && <DemosPage />}
+        {pathname === '/team' && <OurTeamPage />}
       </main>
       <Footer onNavigate={navigateTo} />
     </div>
