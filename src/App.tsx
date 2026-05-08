@@ -30,41 +30,22 @@ function App() {
     }
   }
 
-  const navigateToSection = (id: string) => {
-    if (pathname !== '/') {
-      navigateTo('/')
-      setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-      }, 0)
-      return
-    }
-
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   const handlePricingSelect = (subject: string) => {
     setContactSubject(subject)
-    setTimeout(() => {
-      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-    }, 0)
+    navigateTo('/contact')
   }
 
   return (
     <div className="bg-white dark:bg-slate-950 transition-colors duration-200">
       <Navbar isDark={isDark} onThemeToggle={toggleTheme} pathname={pathname} onNavigate={navigateTo} />
       <main>
-        {pathname === '/demos' ? (
-          <DemosPage />
-        ) : (
-          <>
-            <Hero />
-            <Services />
-            <Pricing onSelect={handlePricingSelect} />
-            <ContactForm subject={contactSubject} />
-          </>
-        )}
+        {pathname === '/' && <Hero onNavigate={navigateTo} />}
+        {pathname === '/services' && <Services />}
+        {pathname === '/pricing' && <Pricing onSelect={handlePricingSelect} />}
+        {pathname === '/contact' && <ContactForm subject={contactSubject} />}
+        {pathname === '/demos' && <DemosPage />}
       </main>
-      <Footer onNavigateToSection={navigateToSection} />
+      <Footer onNavigate={navigateTo} />
     </div>
   )
 }

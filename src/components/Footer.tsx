@@ -1,8 +1,8 @@
 interface FooterProps {
-  onNavigateToSection: (id: string) => void;
+  onNavigate: (path: string) => void;
 }
 
-export function Footer({ onNavigateToSection }: FooterProps) {
+export function Footer({ onNavigate }: FooterProps) {
   const logoLightSrc = `${import.meta.env.BASE_URL}logo-light.png`;
   const logoDarkSrc = `${import.meta.env.BASE_URL}logo-dark.png`;
 
@@ -37,16 +37,16 @@ export function Footer({ onNavigateToSection }: FooterProps) {
               <li>
                 <button
                   type="button"
-                  onClick={() => onNavigateToSection('about')}
+                  onClick={() => onNavigate('/')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  About
+                  Home
                 </button>
               </li>
               <li>
                 <button
                   type="button"
-                  onClick={() => onNavigateToSection('services')}
+                  onClick={() => onNavigate('/services')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   Services
@@ -55,7 +55,7 @@ export function Footer({ onNavigateToSection }: FooterProps) {
               <li>
                 <button
                   type="button"
-                  onClick={() => onNavigateToSection('pricing')}
+                  onClick={() => onNavigate('/pricing')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   Pricing
@@ -64,7 +64,7 @@ export function Footer({ onNavigateToSection }: FooterProps) {
               <li>
                 <button
                   type="button"
-                  onClick={() => onNavigateToSection('contact')}
+                  onClick={() => onNavigate('/contact')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   Contact
@@ -81,7 +81,7 @@ export function Footer({ onNavigateToSection }: FooterProps) {
             </p>
             <button
               type="button"
-              onClick={() => onNavigateToSection('contact')}
+              onClick={() => onNavigate('/contact')}
               className="inline-block px-4 py-2 bg-white text-slate-900 rounded-lg font-semibold hover:bg-slate-100 transition-colors"
             >
               Contact Me
