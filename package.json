@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://astridbonoan.github.io/SA_webworks.io/",
+  "homepage": "https://astridbonoan.github.io/AD_webworks.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
