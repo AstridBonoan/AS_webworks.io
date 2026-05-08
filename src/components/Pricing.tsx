@@ -79,19 +79,19 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
   ];
 
   const PricingCard = ({ category, tier }: { category: string; tier: any }) => (
-    <div className="bg-white dark:bg-slate-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full min-h-[28rem]">
+    <div className="bg-white dark:bg-slate-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-200 flex flex-col h-full">
       <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-1">
         {tier.name}
       </h4>
       <p className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
         {tier.price}
       </p>
-      <div className="grid grid-cols-2 gap-x-4 gap-y-2 flex-grow content-start">
+      <div className="space-y-2.5 flex-grow">
         {tier.features.map((feature: string, idx: number) => (
           <div key={idx} className="flex items-start">
-            <span className="w-4 h-4 bg-slate-900 dark:bg-white rounded-full flex items-center justify-center mr-2 flex-shrink-0 mt-0.5">
+            <span className="w-5 h-5 bg-slate-900 dark:bg-white rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5">
               <svg
-                className="w-2.5 h-2.5 text-white dark:text-slate-900"
+                className="w-3 h-3 text-white dark:text-slate-900"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -102,7 +102,7 @@ export function Pricing({ onSelect }: { onSelect?: (subject: string) => void }) 
                 ></path>
               </svg>
             </span>
-            <span className="text-sm text-slate-700 dark:text-slate-200 leading-snug">{feature}</span>
+            <span className="text-sm text-slate-700 dark:text-slate-200">{feature}</span>
           </div>
         ))}
       </div>
