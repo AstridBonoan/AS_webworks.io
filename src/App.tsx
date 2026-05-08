@@ -40,12 +40,8 @@ function App() {
       <Navbar isDark={isDark} onThemeToggle={toggleTheme} pathname={pathname} onNavigate={navigateTo} />
       <main>
         {pathname === '/' && <Hero onNavigate={navigateTo} />}
-        {(pathname === '/services' || pathname === '/pricing') && (
-          <>
-            <Services />
-            <Pricing onSelect={handlePricingSelect} />
-          </>
-        )}
+        {pathname === '/services' && <Services />}
+        {pathname === '/pricing' && <Pricing onSelect={handlePricingSelect} />}
         {pathname === '/contact' && <ContactForm subject={contactSubject} />}
         {pathname === '/demos' && <DemosPage />}
       </main>
