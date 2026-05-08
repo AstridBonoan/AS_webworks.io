@@ -1,6 +1,6 @@
-# Bonoan Labs - Professional Business Website
+# A&S Web Works - Professional Business Website
 
-A modern, professional mobile-first website for Bonoan Labs built with React, Tailwind CSS, and Vite.
+A modern, professional mobile-first website for A&S Web Works built with React, Tailwind CSS, and Vite.
 
 ## 🌟 Features
 
@@ -138,7 +138,7 @@ No custom CSS needed - everything uses Tailwind utility classes!
 
 ## 📄 License
 
-Proprietary to Bonoan Labs.
+Proprietary to A&S Web Works.
 
 ---
 
