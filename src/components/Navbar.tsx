@@ -49,11 +49,11 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
           >
             <img
               src={isDark ? logoDarkSrc : logoLightSrc}
-              alt="A&S Web Works"
+              alt="Bonoan Labs"
               className={`h-12 w-auto ${isDark ? 'mix-blend-screen' : ''}`}
             />
             <span className="text-2xl font-bold text-slate-900 dark:text-white">
-              A&S Web Works
+              Bonoan Labs
             </span>
           </button>
 

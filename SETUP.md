@@ -1,4 +1,4 @@
-# A&S Web Works Website - Setup Guide
+# Bonoan Labs Website - Setup Guide
 
 ## Initial Setup Instructions
 
@@ -259,4 +259,4 @@ For issues with React, visit: https://react.dev
 
 ---
 
-**Your A&S Web Works website is ready to launch! 🚀**
+**Your Bonoan Labs website is ready to launch! 🚀**
