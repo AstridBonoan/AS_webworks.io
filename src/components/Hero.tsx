@@ -11,12 +11,11 @@ export function Hero() {
     >
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6">
-          Digital Solutions for Your Business
+          We Build Websites, Apps, and Brands That Help Businesses Grow
         </h1>
         
         <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-          I'm a web developer and designer specializing in creating stunning, functional digital experiences. 
-          Transform your business ideas into reality with custom websites, SaaS tools, and compelling brand identities.
+          Custom web development, workflow solutions, and strategic design for businesses ready to scale.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
