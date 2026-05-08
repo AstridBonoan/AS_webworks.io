@@ -63,7 +63,7 @@ export function DemosPage() {
             <div className="p-5">
               <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">A&S Enterprises</h2>
               <a
-                href="https://astridbonoan.github.io/AS-RealEstate.io/"
+                href="https://astridbonoan.github.io/AS_RealEstate.io/"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center rounded-lg bg-slate-900 dark:bg-white px-4 py-2 text-sm font-semibold text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors"
