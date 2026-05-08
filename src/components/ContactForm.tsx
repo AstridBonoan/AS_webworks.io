@@ -46,11 +46,11 @@ export function ContactForm({ subject = '' }: ContactFormProps) {
   return (
     <section
       id="contact"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-200"
+      className="pt-28 pb-10 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-950 transition-colors duration-200"
     >
       <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-3">
             Let's Work Together
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300">
@@ -65,8 +65,8 @@ export function ContactForm({ subject = '' }: ContactFormProps) {
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label
                   htmlFor="name"
@@ -79,7 +79,7 @@ export function ContactForm({ subject = '' }: ContactFormProps) {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white transition-colors"
+                  className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white transition-colors"
                   placeholder="Your name"
                 />
               </div>
@@ -96,7 +96,7 @@ export function ContactForm({ subject = '' }: ContactFormProps) {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white transition-colors"
+                  className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
@@ -116,7 +116,7 @@ export function ContactForm({ subject = '' }: ContactFormProps) {
                 value={formSubject}
                 onChange={(e) => setFormSubject(e.target.value)}
                 required
-                className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white transition-colors"
+                className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white transition-colors"
                 placeholder="What's this about?"
               />
             </div>
@@ -132,7 +132,7 @@ export function ContactForm({ subject = '' }: ContactFormProps) {
                 id="message"
                 name="message"
                 required
-                rows={6}
+                rows={4}
                 className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white transition-colors resize-none"
                 placeholder="Tell me about your project..."
               ></textarea>
