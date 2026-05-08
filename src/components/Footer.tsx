@@ -49,16 +49,7 @@ export function Footer({ onNavigate }: FooterProps) {
                   onClick={() => onNavigate('/services')}
                   className="text-slate-400 hover:text-white transition-colors"
                 >
-                  Services
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={() => onNavigate('/pricing')}
-                  className="text-slate-400 hover:text-white transition-colors"
-                >
-                  Pricing
+                  Services & Pricing
                 </button>
               </li>
               <li>

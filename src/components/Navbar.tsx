@@ -53,13 +53,7 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
               onClick={() => onNavigate('/services')}
               className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
             >
-              Services
-            </button>
-            <button
-              onClick={() => onNavigate('/pricing')}
-              className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
-            >
-              Pricing
+              Services & Pricing
             </button>
             <button
               onClick={() => onNavigate('/contact')}
@@ -188,16 +182,7 @@ export function Navbar({ isDark, onThemeToggle, pathname, onNavigate }: NavbarPr
               }}
               className="block w-full text-left px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 border-b border-slate-100 dark:border-slate-800"
             >
-              Services
-            </button>
-            <button
-              onClick={() => {
-                onNavigate('/pricing');
-                setIsMenuOpen(false);
-              }}
-              className="block w-full text-left px-6 py-4 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 border-b border-slate-100 dark:border-slate-800"
-            >
-              Pricing
+              Services & Pricing
             </button>
             <button
               onClick={() => {
